@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_previous_price"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_marginTop="5sp"
+        android:textColor="@color/colorLight"
+        android:text="3333333333"
+        android:textSize="18dp"
+        android:paddingLeft="10sp"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorLight"/>
+
+</FrameLayout>

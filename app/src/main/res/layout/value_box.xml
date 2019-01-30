@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Enter compare number to show alert."
+        android:textAlignment="center"
+        android:textColor="@color/colorLight"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etValue"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/rectangle"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="20.12"
+        android:textAlignment="center"
+        android:textColor="@color/colorLight"
+        android:textColorHint="@color/colorLight"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="258dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_corners"
+        android:backgroundTint="@color/colorLight"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Save"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+</LinearLayout>

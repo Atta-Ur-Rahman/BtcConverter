@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "302507637310",
+    "firebase_url": "https://bitcoin2-a422c.firebaseio.com",
+    "project_id": "bitcoin2-a422c",
+    "storage_bucket": "bitcoin2-a422c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:302507637310:android:6228afeede215f27",
+        "android_client_info": {
+          "package_name": "com.techease.bitcoin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "302507637310-dqtr58460tvv9jqcis0vjsuqtc5en0o1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.techease.bitcoin",
+            "certificate_hash": "27d119ad106f50955ebdf9390799d5a90a1b9257"
+          }
+        },
+        {
+          "client_id": "302507637310-lv2kmu6dvksrdhqmr8cog0mbnu9009jk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5S3xyUkFy5OlUNJoZkj2dC0BniipbrHU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "302507637310-lv2kmu6dvksrdhqmr8cog0mbnu9009jk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

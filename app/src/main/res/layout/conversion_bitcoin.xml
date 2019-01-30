@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.99">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:id="@+id/tabBitcoin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center"
+                        android:background="@drawable/cardback"
+                        android:foregroundGravity="center_vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/card"
+                            android:foregroundGravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:id="@+id/bitcoinLogo"
+                                        android:layout_width="120sp"
+                                        android:layout_height="120sp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_weight="0.10"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintHorizontal_bias="0.244"
+                                        app:layout_constraintLeft_toLeftOf="parent"
+                                        app:layout_constraintRight_toRightOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintVertical_bias="1.0"
+                                        app:srcCompat="@drawable/bitcoin"
+                                        tools:layout_constraintLeft_creator="1"
+                                        tools:layout_constraintTop_creator="1" />
+
+                                    <ImageView
+                                        android:id="@+id/imgAlert"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_marginTop="17dp"
+                                        android:layout_marginEnd="18dp"
+                                        android:layout_weight="0.26"
+                                        android:foregroundGravity="right"
+                                        app:srcCompat="@drawable/notification_icon" />
+
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:id="@+id/tvBitcoinToday"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="5dp"
+                                    android:text="Bitcoin Today"
+                                    android:textAlignment="viewStart"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/colorLight"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="5dp"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:id="@+id/tvBtcToday"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.44"
+                                    android:gravity="center"
+                                    android:text="4460.96"
+                                    android:textColor="@color/colorLight"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvUSD"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.48"
+                                    android:text="USD"
+                                    android:textColor="@color/colorLight"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imageView3"
+                                    android:layout_width="34dp"
+                                    android:layout_height="match_parent"
+                                    android:paddingLeft="5dp"
+                                    android:paddingTop="5dp"
+                                    android:paddingRight="5dp"
+                                    android:paddingBottom="10dp"
+                                    app:srcCompat="@drawable/calender" />
+
+                                <TextView
+                                    android:id="@+id/tvDate1"
+                                    android:layout_width="151dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@android:color/white"
+                                    android:ems="10"
+                                    android:inputType="date"
+                                    android:paddingLeft="10dp"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="10dp"
+                                    android:text="Oct 6, 2017"
+                                    android:textColor="@color/colorLight"
+                                    android:textSize="18sp" />
+
+
+                                <ImageView
+                                    android:id="@+id/iv_bitcoin_list"
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"
+                                    android:layout_marginLeft="80sp"
+                                    android:src="@drawable/previous" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                    <ScrollView
+                        android:id="@+id/scrollOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvBitcoin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:text="Bitcoin Conversion"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorLight"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvBtc"
+                                    android:layout_width="0sp"
+                                    android:layout_height="30sp"
+                                    android:layout_marginBottom="20dp"
+                                    android:layout_weight="0.8"
+                                    android:background="@drawable/rectangle"
+                                    android:gravity="center"
+                                    android:text="BTC"
+                                    android:textColor="@color/colorLight"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvBtc_rate"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="40dp"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="1"
+                                    android:textColor="@color/colorLight"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvUsd"
+                                    android:layout_width="0sp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:layout_weight="0.8"
+                                    android:background="@drawable/rectangle"
+                                    android:gravity="center"
+                                    android:text="USD"
+                                    android:textColor="@color/colorLight"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvBtc_usd"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="40dp"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="4460.49"
+                                    android:textColor="@color/colorLight"
+                                    android:textSize="20sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvMxn"
+                                    android:layout_width="0sp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:layout_weight="0.8"
+                                    android:background="@drawable/rectangle"
+                                    android:gravity="center"
+                                    android:text="EUR"
+                                    android:textColor="@color/colorLight"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvBtc_mxn"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="40dp"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="81604.66"
+                                    android:textColor="@color/colorLight"
+                                    android:textSize="20sp" />
+
+                            </LinearLayout>
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_chf"
+                                    android:layout_width="0sp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:layout_weight="0.8"
+                                    android:background="@drawable/rectangle"
+                                    android:gravity="center"
+                                    android:text="CHF"
+                                    android:textColor="@color/colorLight"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvBtc_chf"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="40dp"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="81604.66"
+                                    android:textColor="@color/colorLight"
+                                    android:textSize="20sp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/view2"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginRight="15dp"
+                                android:background="@color/colorLight" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20sp"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:id="@+id/tvMxnUsd"
+                                    android:layout_width="0sp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/rectangle"
+                                    android:gravity="center"
+                                    android:text="MXN/USD"
+                                    android:textColor="@color/colorLight"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvBtc_MxnUsd"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="60dp"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:maxLength="6"
+                                    android:text="33.44"
+                                    android:textColor="@color/colorLight"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </ScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tabEthereum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center"
+                        android:background="@drawable/cardback"
+                        android:foregroundGravity="center_vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/card"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:id="@+id/ethereumLogo"
+                                        android:layout_width="120sp"
+                                        android:layout_height="120sp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_weight="0.10"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintHorizontal_bias="0.244"
+                                        app:layout_constraintLeft_toLeftOf="parent"
+                                        app:layout_constraintRight_toRightOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintVertical_bias="1.0"
+                                        app:srcCompat="@drawable/ethereum"
+                                        tools:layout_constraintLeft_creator="1"
+                                        tools:layout_constraintTop_creator="1" />
+
+                                    <ImageView
+                                        android:id="@+id/imgAlertTwo"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_marginTop="17dp"
+                                        android:layout_marginEnd="18dp"
+                                        android:layout_weight="0.26"
+                                        android:foregroundGravity="right"
+                                        app:srcCompat="@drawable/notification_icon" />
+
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:id="@+id/tvEthereumToday"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="5dp"
+                                    android:text="Ethereum today"
+                                    android:textAlignment="viewStart"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/colorLight"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="5dp"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:id="@+id/tvEthToday"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.44"
+                                    android:gravity="center"
+                                    android:text="2500"
+                                    android:textColor="@color/colorLight"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvUSDTwo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.48"
+                                    android:text="USD"
+                                    android:textColor="@color/colorLight"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imageView33"
+                                    android:layout_width="34dp"
+                                    android:layout_height="match_parent"
+                                    android:paddingLeft="5dp"
+                                    android:paddingTop="5dp"
+                                    android:paddingRight="5dp"
+                                    android:paddingBottom="10dp"
+                                    app:srcCompat="@drawable/calender" />
+
+                                <TextView
+                                    android:id="@+id/tvDate2"
+                                    android:layout_width="151dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@android:color/white"
+                                    android:ems="10"
+                                    android:inputType="date"
+                                    android:paddingLeft="10dp"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="10dp"
+                                    android:text="Oct 6, 2017"
+                                    android:textColor="@color/colorLight"
+                                    android:textSize="18sp" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <ScrollView
+                        android:id="@+id/scrolltwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvEthereum"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:text="Ethereum Conversion"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorLight"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvETH"
+                                    android:layout_width="0sp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:layout_weight="0.8"
+                                    android:background="@drawable/rectangle"
+                                    android:gravity="center"
+                                    android:text="ETH"
+                                    android:textColor="@color/colorLight"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvEth_rate"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="40dp"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="1"
+                                    android:textColor="@color/colorLight"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvUSD"
+                                    android:layout_width="0sp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:layout_weight="0.8"
+                                    android:background="@drawable/rectangle"
+                                    android:gravity="center"
+                                    android:text="USD"
+                                    android:textColor="@color/colorLight"
+                                    android:textStyle="bold"
+                                    tools:ignore="DuplicateIds" />
+
+                                <TextView
+                                    android:id="@+id/tvEth_Usd"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="40dp"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="301"
+                                    android:textColor="@color/colorLight"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvMXN"
+                                    android:layout_width="0sp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:layout_weight="0.8"
+                                    android:background="@drawable/rectangle"
+                                    android:gravity="center"
+                                    android:text="EUR"
+                                    android:textColor="@color/colorLight"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvEth_mxn"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="40dp"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="5508.36"
+                                    android:textColor="@color/colorLight"
+                                    android:textSize="20sp" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0sp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:layout_weight="0.8"
+                                    android:background="@drawable/rectangle"
+                                    android:gravity="center"
+                                    android:text="CHF"
+                                    android:textColor="@color/colorLight"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvEth_chf"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="40dp"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="5508.36"
+                                    android:textColor="@color/colorLight"
+                                    android:textSize="20sp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/view"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginRight="15dp"
+                                android:background="@color/colorLight" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20sp"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:id="@+id/tvEthMxnUsd"
+                                    android:layout_width="0sp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/rectangle"
+                                    android:gravity="center"
+                                    android:text="MXN/USD"
+                                    android:textColor="@color/colorLight"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvEth_MxnUsd"
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="60dp"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:maxLength="6"
+                                    android:text="19.9"
+                                    android:textColor="@color/colorLight"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </ScrollView>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/colorLight" />
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="0"
+                android:foregroundGravity="bottom"
+                android:gravity="bottom" />
+
+        </LinearLayout>
+
+    </TabHost>
+
+</LinearLayout>
